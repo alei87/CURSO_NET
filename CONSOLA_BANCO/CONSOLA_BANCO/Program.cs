@@ -12,6 +12,19 @@ namespace CONSOLA_BANCO
     {
         static void Main(string[] args)
         {
+            Cuenta cnt = new Cuenta();
+            string opcion = "";
+
+            do
+            {
+                Console.WriteLine("1-Crear cuenta");
+                Console.WriteLine("2-Depositar una cantidad");
+                Console.WriteLine("Retirar una cantidad");
+                Console.WriteLine("4-Consultar Saldo");
+                Console.WriteLine("5-Salir de la App");
+                opcion = Console.ReadLine();
+            }
+            
         }
     }
 }
