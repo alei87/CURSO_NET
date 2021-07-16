@@ -40,21 +40,21 @@ namespace CONSOLA_BANCO
 
         public void Consultar()
         {
-            Console.WriteLine("El nombre del cliente es: " + this.nombreCliente + "el número de cuenta es: " + this.numCuenta + "y su saldo es: ");
+            Console.WriteLine("El nombre del cliente es: " + this.nombreCliente + "el número de cuenta es: " + this.numCuenta + "y su saldo es: "+this.saldo);
         }
 
-        public void Depositar()
+        public void Depositar(int deposito)
         {
-            int deposito = 0;
+            
 
             PSaldo = PSaldo + deposito;
         }
 
-        public void retirar()
+        public void retirar(int retiro)
         {
-            int retiro = 0;
+            
 
-            if (retiro > saldo)
+            if (retiro > PSaldo)
             {
                 Console.WriteLine("No se puede retirar esta cantidad");
             }
