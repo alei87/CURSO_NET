@@ -1,0 +1,7 @@
+C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\CONSOLA_ZOO\CONSOLA_ZOO\bin\Debug\CONSOLA_ZOO.exe.config
+C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\CONSOLA_ZOO\CONSOLA_ZOO\bin\Debug\CONSOLA_ZOO.exe
+C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\CONSOLA_ZOO\CONSOLA_ZOO\bin\Debug\CONSOLA_ZOO.pdb
+C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\CONSOLA_ZOO\CONSOLA_ZOO\obj\Debug\CONSOLA_ZOO.csproj.AssemblyReference.cache
+C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\CONSOLA_ZOO\CONSOLA_ZOO\obj\Debug\CONSOLA_ZOO.csproj.CoreCompileInputs.cache
+C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\CONSOLA_ZOO\CONSOLA_ZOO\obj\Debug\CONSOLA_ZOO.exe
+C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\CONSOLA_ZOO\CONSOLA_ZOO\obj\Debug\CONSOLA_ZOO.pdb

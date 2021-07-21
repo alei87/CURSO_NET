@@ -40,10 +40,10 @@ namespace CONSOLA_ZOO
         public Animal() { }
         public Animal(string p_especie, string p_nombre, double p_peso, int p_numJaula)
         {
-            p_especie = especie;
-            p_nombre = nombre;
-            p_peso = peso;
-            p_numJaula = numJaula;
+             especie= p_especie;
+             nombre= p_nombre;
+            peso=p_peso;
+              numJaula= p_numJaula;
         }
 
         public virtual void ClaseDeAnimalEres()

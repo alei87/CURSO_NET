@@ -27,7 +27,7 @@ namespace CONSOLA_ZOO
 
         public override void ClaseDeAnimalEres()
         {
-            Console.WriteLine("Soy un " + this.Especie);
+            Console.WriteLine("Soy un " + especie);
             Console.WriteLine("Mi nombre es " + this.Nombre);
             Console.WriteLine("Mi peso es " + this.Peso);
             Console.WriteLine("Mi número de jaula es " + this.NumJaula);
