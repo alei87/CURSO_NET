@@ -1,0 +1,10 @@
+C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\LinQtoSP(examen)\LinQtoSP(examen)\bin\Debug\LinQtoSP(examen).exe.config
+C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\LinQtoSP(examen)\LinQtoSP(examen)\bin\Debug\LinQtoSP(examen).exe
+C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\LinQtoSP(examen)\LinQtoSP(examen)\bin\Debug\LinQtoSP(examen).pdb
+C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\LinQtoSP(examen)\LinQtoSP(examen)\obj\Debug\LinQtoSP(examen).csproj.AssemblyReference.cache
+C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\LinQtoSP(examen)\LinQtoSP(examen)\obj\Debug\LinQtoSP_examen_.Form1.resources
+C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\LinQtoSP(examen)\LinQtoSP(examen)\obj\Debug\LinQtoSP_examen_.Properties.Resources.resources
+C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\LinQtoSP(examen)\LinQtoSP(examen)\obj\Debug\LinQtoSP(examen).csproj.GenerateResource.cache
+C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\LinQtoSP(examen)\LinQtoSP(examen)\obj\Debug\LinQtoSP(examen).csproj.CoreCompileInputs.cache
+C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\LinQtoSP(examen)\LinQtoSP(examen)\obj\Debug\LinQtoSP(examen).exe
+C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\LinQtoSP(examen)\LinQtoSP(examen)\obj\Debug\LinQtoSP(examen).pdb
