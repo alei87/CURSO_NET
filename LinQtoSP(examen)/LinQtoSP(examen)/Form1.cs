@@ -21,16 +21,29 @@ namespace LinQtoSP_examen_
         private void BtnGuardar_Click(object sender, EventArgs e)
         {
             ClienteLinq.insertarcliente(TxtNombre.Text, TxtApellido1.Text, TxtApellido2.Text, TxtTelefono.Text);
+            this.listarClientes();
         }
 
         private void BtnActualizar_Click(object sender, EventArgs e)
         {
             ClienteLinq.Modificarcliente(TxtNombre.Text, TxtApellido1.Text, TxtApellido2.Text, TxtTelefono.Text);
+            this.listarClientes();
         }
 
         private void BtnEliminar_Click(object sender, EventArgs e)
         {
             ClienteLinq.EliminarCliente(TxtNombre.Text);
+            this.listarClientes();
+        }
+
+        void listarClientes()
+        {
+            GridDatos.DataSource = ClienteLinq.ListarClientes();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            this.listarClientes();
         }
     }
 }

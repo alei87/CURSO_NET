@@ -97,6 +97,7 @@
     <Content Include="SCRIPTS_SQL\BUSCAR_CLIENTE.sql" />
     <Content Include="SCRIPTS_SQL\ELIMINAR_CLIENTE.sql" />
     <Content Include="SCRIPTS_SQL\INSERTAR_CLIENTE.sql" />
+    <Content Include="SCRIPTS_SQL\Listar_Clientes.sql" />
     <Content Include="SCRIPTS_SQL\MODIFICAR_CLIENTE.sql" />
   </ItemGroup>
   <ItemGroup>
