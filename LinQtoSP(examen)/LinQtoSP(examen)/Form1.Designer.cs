@@ -44,6 +44,7 @@ namespace LinQtoSP_examen_
             this.label6 = new System.Windows.Forms.Label();
             this.TxtBuscar = new System.Windows.Forms.TextBox();
             this.GridDatos = new System.Windows.Forms.DataGridView();
+            this.BtnBuscar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.GridDatos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -119,6 +120,7 @@ namespace LinQtoSP_examen_
             this.BtnNuevo.TabIndex = 8;
             this.BtnNuevo.Text = "Nuevo";
             this.BtnNuevo.UseVisualStyleBackColor = true;
+            this.BtnNuevo.Click += new System.EventHandler(this.BtnNuevo_Click);
             // 
             // BtnGuardar
             // 
@@ -174,11 +176,22 @@ namespace LinQtoSP_examen_
             this.GridDatos.Size = new System.Drawing.Size(553, 298);
             this.GridDatos.TabIndex = 15;
             // 
+            // BtnBuscar
+            // 
+            this.BtnBuscar.Location = new System.Drawing.Point(352, 199);
+            this.BtnBuscar.Name = "BtnBuscar";
+            this.BtnBuscar.Size = new System.Drawing.Size(97, 23);
+            this.BtnBuscar.TabIndex = 16;
+            this.BtnBuscar.Text = "Buscar";
+            this.BtnBuscar.UseVisualStyleBackColor = true;
+            this.BtnBuscar.Click += new System.EventHandler(this.BtnBuscar_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(638, 565);
+            this.Controls.Add(this.BtnBuscar);
             this.Controls.Add(this.GridDatos);
             this.Controls.Add(this.TxtBuscar);
             this.Controls.Add(this.label6);
@@ -220,6 +233,7 @@ namespace LinQtoSP_examen_
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox TxtBuscar;
         private System.Windows.Forms.DataGridView GridDatos;
+        private System.Windows.Forms.Button BtnBuscar;
     }
 }
 

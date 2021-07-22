@@ -45,5 +45,19 @@ namespace LinQtoSP_examen_
         {
             this.listarClientes();
         }
+
+        private void BtnBuscar_Click(object sender, EventArgs e)
+        {
+            GridDatos.DataSource = ClienteLinq.buscarcliente(TxtBuscar.Text);
+        }
+
+        private void BtnNuevo_Click(object sender, EventArgs e)
+        {
+            TxtNombre.Text = "";
+            TxtApellido1.Text = "";
+            TxtApellido2.Text = "";
+            TxtTelefono.Text = "";
+            TxtBuscar.Text = "";
+        }
     }
 }
