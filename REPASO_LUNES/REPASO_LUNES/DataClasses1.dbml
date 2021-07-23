@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="REPASO_LUNES" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=ASATA402\SQLEXPRESSALEIDA;Initial Catalog=REPASO_LUNES;Persist Security Info=True;User ID=sa" SettingsObjectName="REPASO_LUNES.Properties.Settings" SettingsPropertyName="REPASO_LUNESConnectionString" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.spañadirClienteS" Method="spañadirClienteS">
+    <Parameter Name="IDCLIENTE" Parameter="iDCLIENTE" Type="System.String" DbType="VarChar(5)" />
+    <Parameter Name="APELLIDOS" Parameter="aPELLIDOS" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="NOMBRES" Parameter="nOMBRES" Type="System.String" DbType="VarChar(30)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spBuscarCliente" Method="spBuscarCliente">
+    <Parameter Name="IDCLIENTE" Parameter="iDCLIENTE" Type="System.String" DbType="VarChar(5)" />
+    <ElementType Name="spBuscarClienteResult">
+      <Column Name="IDCLIENTE" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="APELLIDOS" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="NOMBRES" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.spEliminarCliente" Method="spEliminarCliente">
+    <Parameter Name="IDCLIENTE" Parameter="iDCLIENTE" Type="System.String" DbType="VarChar(5)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spModificarCliente" Method="spModificarCliente">
+    <Parameter Name="IDCLIENTE" Parameter="iDCLIENTE" Type="System.String" DbType="VarChar(5)" />
+    <Parameter Name="APELLIDOS" Parameter="aPELLIDOS" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="NOMBRES" Parameter="nOMBRES" Type="System.String" DbType="VarChar(30)" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>
