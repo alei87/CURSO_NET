@@ -18,10 +18,33 @@
     <Parameter Name="IDCLIENTE" Parameter="iDCLIENTE" Type="System.String" DbType="VarChar(5)" />
     <Return Type="System.Int32" />
   </Function>
+  <Function Name="dbo.spListarClientes" Method="spListarClientes">
+    <ElementType Name="spListarClientesResult">
+      <Column Name="IDCLIENTE" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="APELLIDOS" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="NOMBRES" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+    </ElementType>
+  </Function>
   <Function Name="dbo.spModificarCliente" Method="spModificarCliente">
     <Parameter Name="IDCLIENTE" Parameter="iDCLIENTE" Type="System.String" DbType="VarChar(5)" />
     <Parameter Name="APELLIDOS" Parameter="aPELLIDOS" Type="System.String" DbType="VarChar(30)" />
     <Parameter Name="NOMBRES" Parameter="nOMBRES" Type="System.String" DbType="VarChar(30)" />
     <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spBuscarNombreCliente" Method="spBuscarNombreCliente">
+    <Parameter Name="NOMBRES" Parameter="nOMBRES" Type="System.String" DbType="VarChar(30)" />
+    <ElementType Name="spBuscarNombreClienteResult">
+      <Column Name="IDCLIENTE" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="APELLIDOS" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="NOMBRES" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.spBuscarApellidoCliente" Method="spBuscarApellidoCliente">
+    <Parameter Name="APELLIDOS" Parameter="aPELLIDOS" Type="System.String" DbType="VarChar(30)" />
+    <ElementType Name="spBuscarApellidoClienteResult">
+      <Column Name="IDCLIENTE" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="APELLIDOS" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="NOMBRES" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+    </ElementType>
   </Function>
 </Database>

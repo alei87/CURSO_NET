@@ -83,11 +83,32 @@ namespace REPASO_LUNES
 			return ((int)(result.ReturnValue));
 		}
 		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.spListarClientes")]
+		public ISingleResult<spListarClientesResult> spListarClientes()
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
+			return ((ISingleResult<spListarClientesResult>)(result.ReturnValue));
+		}
+		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.spModificarCliente")]
 		public int spModificarCliente([global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDCLIENTE", DbType="VarChar(5)")] string iDCLIENTE, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="APELLIDOS", DbType="VarChar(30)")] string aPELLIDOS, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="NOMBRES", DbType="VarChar(30)")] string nOMBRES)
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), iDCLIENTE, aPELLIDOS, nOMBRES);
 			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.spBuscarNombreCliente")]
+		public ISingleResult<spBuscarNombreClienteResult> spBuscarNombreCliente([global::System.Data.Linq.Mapping.ParameterAttribute(Name="NOMBRES", DbType="VarChar(30)")] string nOMBRES)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), nOMBRES);
+			return ((ISingleResult<spBuscarNombreClienteResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.spBuscarApellidoCliente")]
+		public ISingleResult<spBuscarApellidoClienteResult> spBuscarApellidoCliente([global::System.Data.Linq.Mapping.ParameterAttribute(Name="APELLIDOS", DbType="VarChar(30)")] string aPELLIDOS)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), aPELLIDOS);
+			return ((ISingleResult<spBuscarApellidoClienteResult>)(result.ReturnValue));
 		}
 	}
 	
@@ -101,6 +122,192 @@ namespace REPASO_LUNES
 		private string _NOMBRES;
 		
 		public spBuscarClienteResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IDCLIENTE", DbType="VarChar(5) NOT NULL", CanBeNull=false)]
+		public string IDCLIENTE
+		{
+			get
+			{
+				return this._IDCLIENTE;
+			}
+			set
+			{
+				if ((this._IDCLIENTE != value))
+				{
+					this._IDCLIENTE = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_APELLIDOS", DbType="VarChar(30)")]
+		public string APELLIDOS
+		{
+			get
+			{
+				return this._APELLIDOS;
+			}
+			set
+			{
+				if ((this._APELLIDOS != value))
+				{
+					this._APELLIDOS = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NOMBRES", DbType="VarChar(30)")]
+		public string NOMBRES
+		{
+			get
+			{
+				return this._NOMBRES;
+			}
+			set
+			{
+				if ((this._NOMBRES != value))
+				{
+					this._NOMBRES = value;
+				}
+			}
+		}
+	}
+	
+	public partial class spListarClientesResult
+	{
+		
+		private string _IDCLIENTE;
+		
+		private string _APELLIDOS;
+		
+		private string _NOMBRES;
+		
+		public spListarClientesResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IDCLIENTE", DbType="VarChar(5) NOT NULL", CanBeNull=false)]
+		public string IDCLIENTE
+		{
+			get
+			{
+				return this._IDCLIENTE;
+			}
+			set
+			{
+				if ((this._IDCLIENTE != value))
+				{
+					this._IDCLIENTE = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_APELLIDOS", DbType="VarChar(30)")]
+		public string APELLIDOS
+		{
+			get
+			{
+				return this._APELLIDOS;
+			}
+			set
+			{
+				if ((this._APELLIDOS != value))
+				{
+					this._APELLIDOS = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NOMBRES", DbType="VarChar(30)")]
+		public string NOMBRES
+		{
+			get
+			{
+				return this._NOMBRES;
+			}
+			set
+			{
+				if ((this._NOMBRES != value))
+				{
+					this._NOMBRES = value;
+				}
+			}
+		}
+	}
+	
+	public partial class spBuscarNombreClienteResult
+	{
+		
+		private string _IDCLIENTE;
+		
+		private string _APELLIDOS;
+		
+		private string _NOMBRES;
+		
+		public spBuscarNombreClienteResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IDCLIENTE", DbType="VarChar(5) NOT NULL", CanBeNull=false)]
+		public string IDCLIENTE
+		{
+			get
+			{
+				return this._IDCLIENTE;
+			}
+			set
+			{
+				if ((this._IDCLIENTE != value))
+				{
+					this._IDCLIENTE = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_APELLIDOS", DbType="VarChar(30)")]
+		public string APELLIDOS
+		{
+			get
+			{
+				return this._APELLIDOS;
+			}
+			set
+			{
+				if ((this._APELLIDOS != value))
+				{
+					this._APELLIDOS = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NOMBRES", DbType="VarChar(30)")]
+		public string NOMBRES
+		{
+			get
+			{
+				return this._NOMBRES;
+			}
+			set
+			{
+				if ((this._NOMBRES != value))
+				{
+					this._NOMBRES = value;
+				}
+			}
+		}
+	}
+	
+	public partial class spBuscarApellidoClienteResult
+	{
+		
+		private string _IDCLIENTE;
+		
+		private string _APELLIDOS;
+		
+		private string _NOMBRES;
+		
+		public spBuscarApellidoClienteResult()
 		{
 		}
 		

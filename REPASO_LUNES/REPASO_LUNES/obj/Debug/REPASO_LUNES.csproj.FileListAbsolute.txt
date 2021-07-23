@@ -1,0 +1,10 @@
+C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\REPASO_LUNES\REPASO_LUNES\obj\Debug\REPASO_LUNES.csproj.AssemblyReference.cache
+C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\REPASO_LUNES\REPASO_LUNES\obj\Debug\REPASO_LUNES.Form1.resources
+C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\REPASO_LUNES\REPASO_LUNES\obj\Debug\REPASO_LUNES.Properties.Resources.resources
+C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\REPASO_LUNES\REPASO_LUNES\obj\Debug\REPASO_LUNES.csproj.GenerateResource.cache
+C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\REPASO_LUNES\REPASO_LUNES\obj\Debug\REPASO_LUNES.csproj.CoreCompileInputs.cache
+C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\REPASO_LUNES\REPASO_LUNES\bin\Debug\REPASO_LUNES.exe.config
+C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\REPASO_LUNES\REPASO_LUNES\bin\Debug\REPASO_LUNES.exe
+C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\REPASO_LUNES\REPASO_LUNES\bin\Debug\REPASO_LUNES.pdb
+C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\REPASO_LUNES\REPASO_LUNES\obj\Debug\REPASO_LUNES.exe
+C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\REPASO_LUNES\REPASO_LUNES\obj\Debug\REPASO_LUNES.pdb

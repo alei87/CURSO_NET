@@ -29,7 +29,6 @@ namespace REPASO_LUNES
         /// </summary>
         private void InitializeComponent()
         {
-            this.ListID = new System.Windows.Forms.ListView();
             this.BtnBuscar = new System.Windows.Forms.Button();
             this.DataGridDatos = new System.Windows.Forms.DataGridView();
             this.BtnAgregar = new System.Windows.Forms.Button();
@@ -42,26 +41,21 @@ namespace REPASO_LUNES
             this.TxtNombre = new System.Windows.Forms.TextBox();
             this.TxtApellidos = new System.Windows.Forms.TextBox();
             this.BtnSalir = new System.Windows.Forms.Button();
+            this.TxtBuscar = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.BtnReset = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridDatos)).BeginInit();
             this.SuspendLayout();
             // 
-            // ListID
-            // 
-            this.ListID.HideSelection = false;
-            this.ListID.Location = new System.Drawing.Point(24, 22);
-            this.ListID.Name = "ListID";
-            this.ListID.Size = new System.Drawing.Size(121, 22);
-            this.ListID.TabIndex = 0;
-            this.ListID.UseCompatibleStateImageBehavior = false;
-            // 
             // BtnBuscar
             // 
-            this.BtnBuscar.Location = new System.Drawing.Point(169, 21);
+            this.BtnBuscar.Location = new System.Drawing.Point(455, 22);
             this.BtnBuscar.Name = "BtnBuscar";
-            this.BtnBuscar.Size = new System.Drawing.Size(322, 23);
+            this.BtnBuscar.Size = new System.Drawing.Size(121, 23);
             this.BtnBuscar.TabIndex = 1;
             this.BtnBuscar.Text = "BUSCAR";
             this.BtnBuscar.UseVisualStyleBackColor = true;
+            this.BtnBuscar.Click += new System.EventHandler(this.BtnBuscar_Click);
             // 
             // DataGridDatos
             // 
@@ -79,6 +73,7 @@ namespace REPASO_LUNES
             this.BtnAgregar.TabIndex = 3;
             this.BtnAgregar.Text = "AGREGAR";
             this.BtnAgregar.UseVisualStyleBackColor = true;
+            this.BtnAgregar.Click += new System.EventHandler(this.BtnAgregar_Click);
             // 
             // BtnEliminar
             // 
@@ -88,6 +83,7 @@ namespace REPASO_LUNES
             this.BtnEliminar.TabIndex = 4;
             this.BtnEliminar.Text = "ELIMINAR";
             this.BtnEliminar.UseVisualStyleBackColor = true;
+            this.BtnEliminar.Click += new System.EventHandler(this.BtnEliminar_Click);
             // 
             // BtnModificar
             // 
@@ -97,6 +93,7 @@ namespace REPASO_LUNES
             this.BtnModificar.TabIndex = 5;
             this.BtnModificar.Text = "MODIFICAR";
             this.BtnModificar.UseVisualStyleBackColor = true;
+            this.BtnModificar.Click += new System.EventHandler(this.BtnModificar_Click);
             // 
             // label1
             // 
@@ -154,12 +151,46 @@ namespace REPASO_LUNES
             this.BtnSalir.TabIndex = 12;
             this.BtnSalir.Text = "SALIR";
             this.BtnSalir.UseVisualStyleBackColor = true;
+            this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
+            // 
+            // TxtBuscar
+            // 
+            this.TxtBuscar.Location = new System.Drawing.Point(162, 22);
+            this.TxtBuscar.Name = "TxtBuscar";
+            this.TxtBuscar.Size = new System.Drawing.Size(268, 20);
+            this.TxtBuscar.TabIndex = 13;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "IDCLIENTE",
+            "APELLIDOS",
+            "NOMBRES",
+            ""});
+            this.comboBox1.Location = new System.Drawing.Point(24, 24);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 14;
+            // 
+            // BtnReset
+            // 
+            this.BtnReset.Location = new System.Drawing.Point(623, 24);
+            this.BtnReset.Name = "BtnReset";
+            this.BtnReset.Size = new System.Drawing.Size(124, 23);
+            this.BtnReset.TabIndex = 15;
+            this.BtnReset.Text = "Reset";
+            this.BtnReset.UseVisualStyleBackColor = true;
+            this.BtnReset.Click += new System.EventHandler(this.BtnReset_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.BtnReset);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.TxtBuscar);
             this.Controls.Add(this.BtnSalir);
             this.Controls.Add(this.TxtApellidos);
             this.Controls.Add(this.TxtNombre);
@@ -172,9 +203,9 @@ namespace REPASO_LUNES
             this.Controls.Add(this.BtnAgregar);
             this.Controls.Add(this.DataGridDatos);
             this.Controls.Add(this.BtnBuscar);
-            this.Controls.Add(this.ListID);
             this.Name = "Form1";
             this.Text = "EJER_REPASO";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DataGridDatos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -182,8 +213,6 @@ namespace REPASO_LUNES
         }
 
         #endregion
-
-        private System.Windows.Forms.ListView ListID;
         private System.Windows.Forms.Button BtnBuscar;
         private System.Windows.Forms.DataGridView DataGridDatos;
         private System.Windows.Forms.Button BtnAgregar;
@@ -196,6 +225,9 @@ namespace REPASO_LUNES
         private System.Windows.Forms.TextBox TxtNombre;
         private System.Windows.Forms.TextBox TxtApellidos;
         private System.Windows.Forms.Button BtnSalir;
+        private System.Windows.Forms.TextBox TxtBuscar;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button BtnReset;
     }
 }
 
