@@ -25,7 +25,7 @@ namespace REPASO_LUNES
 
         private void BtnAgregar_Click(object sender, EventArgs e)
         {
-            clases.spañadirClienteS(TxtIDcliente.Text,TxtNombre.Text, TxtApellidos.Text);
+            clases.spañadirClienteS(TxtIDcliente.Text,TxtApellidos.Text, TxtNombre.Text);
             this.mostrarCliente();
  
         }
@@ -83,6 +83,8 @@ namespace REPASO_LUNES
 
         private void BtnReset_Click(object sender, EventArgs e)
         {
+
+            this.mostrarCliente();
             TxtBuscar.Text = "";
             TxtIDcliente.Text = "";
             TxtNombre.Text = "";
