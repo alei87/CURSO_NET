@@ -1,0 +1,15 @@
+C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\INYECCION_SQL\INYECCION_SQL\obj\Debug\INYECCION_SQL.csproj.AssemblyReference.cache
+C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\INYECCION_SQL\INYECCION_SQL\obj\Debug\App.g.cs
+C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\INYECCION_SQL\INYECCION_SQL\obj\Debug\INYECCION_SQL_MarkupCompile.cache
+C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\INYECCION_SQL\INYECCION_SQL\bin\Debug\INYECCION_SQL.exe.config
+C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\INYECCION_SQL\INYECCION_SQL\bin\Debug\INYECCION_SQL.exe
+C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\INYECCION_SQL\INYECCION_SQL\bin\Debug\INYECCION_SQL.pdb
+C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\INYECCION_SQL\INYECCION_SQL\obj\Debug\MainWindow.g.cs
+C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\INYECCION_SQL\INYECCION_SQL\obj\Debug\INYECCION_SQL_MarkupCompile.lref
+C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\INYECCION_SQL\INYECCION_SQL\obj\Debug\MainWindow.baml
+C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\INYECCION_SQL\INYECCION_SQL\obj\Debug\INYECCION_SQL.g.resources
+C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\INYECCION_SQL\INYECCION_SQL\obj\Debug\INYECCION_SQL.Properties.Resources.resources
+C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\INYECCION_SQL\INYECCION_SQL\obj\Debug\INYECCION_SQL.csproj.GenerateResource.cache
+C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\INYECCION_SQL\INYECCION_SQL\obj\Debug\INYECCION_SQL.csproj.CoreCompileInputs.cache
+C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\INYECCION_SQL\INYECCION_SQL\obj\Debug\INYECCION_SQL.exe
+C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\INYECCION_SQL\INYECCION_SQL\obj\Debug\INYECCION_SQL.pdb
