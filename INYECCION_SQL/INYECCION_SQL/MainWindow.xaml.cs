@@ -29,18 +29,135 @@ namespace INYECCION_SQL
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            try
+            {
+                if (TxtIDInsertar.Text != "" && TxtNombreInsertar.Text != "" && TxtEdadInsertar.Text != "")
+                {
+
+                    conexion.Open();
+                    string iden = TxtIDInsertar.Text;
+                    string nombre = TxtNombreInsertar.Text;
+                    string edad = TxtEdadInsertar.Text;
+                    string cadena = "insert into Personas (id, nombre, edad)" +
+                        "values(" + iden + ",'" + nombre + "' ," + edad + ")";
+                    SqlCommand comando = new SqlCommand(cadena, conexion);
+                    comando.ExecuteNonQuery();
+                    MessageBox.Show("Los datos se guardaron correctamente");
+                    TxtIDInsertar.Text = "";
+                    TxtNombreInsertar.Text = "";
+                    TxtEdadInsertar.Text = "";
+
+
+                    conexion.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Rellene todos los campos");
+                }
+
+
+
+
+            }
+            catch
+            {
+                MessageBox.Show("El registro ya está insertado");
+            }
+           
+
+           
+            
+        }
+
+        private void BtnConsulta_Click(object sender, RoutedEventArgs e)
+        {
             conexion.Open();
-            string iden = TxtIDInsertar.Text;
-            string nombre = TxtNombreInsertar.Text;
-            string edad = TxtEdadInsertar.Text;
-            string cadena = "insert into Personas (id, nombre, edad)" +
-                "values(" + iden + "," + nombre + " ," + edad + ")";
+            string id = TxtIDEliminar.Text;
+            string cadena = "select id, nombre, edad from Personas where id =" + id;
             SqlCommand comando = new SqlCommand(cadena, conexion);
-            comando.ExecuteNonQuery();
-            MessageBox.Show("Los datos se guardaron correctamente");
-            TxtIDInsertar.Text = "";
-            TxtNombreInsertar.Text = "";
+            SqlDataReader registro =  comando.ExecuteReader();
+            if (registro.Read())
+            {
+                LabelNombre.Content = registro["nombre"].ToString();
+                LabelEdad.Content = registro["edad"].ToString();
+                BtnConsulta.IsEnabled = true;
+            }
+            else
+            {
+                MessageBox.Show("No existe un artículo con el código ingresado");
+            }
+               
             conexion.Close();
+        }
+
+        private void BtnBorrar_Click(object sender, RoutedEventArgs e)
+        {
+            conexion.Open();
+            string iden = TxtIDEliminar.Text;
+            string cadena = " delete from Personas where id=" + iden;
+            SqlCommand comando = new SqlCommand(cadena, conexion);
+            int cant;
+            cant = comando.ExecuteNonQuery();
+            if (cant == 1)
+            {
+                LabelNombre.Content = "";
+                LabelEdad.Content = "";
+                MessageBox.Show("Se borró el artículo");
+            }
+            else
+            {
+                MessageBox.Show("No existe el artículo con el código ingresado");
+            }
+                
+            conexion.Close();
+            BtnConsulta.IsEnabled = false;
+        }
+
+        private void BtnBusca_Click(object sender, RoutedEventArgs e)
+        {
+            conexion.Open();
+            string cod = TxtIDModificar.Text;
+            string cadena = "select id, nombre, edad from Personas where id=" + cod;
+            SqlCommand comando = new SqlCommand(cadena, conexion);
+            SqlDataReader registro = comando.ExecuteReader();
+            if (registro.Read())
+            {
+                TxtNombreModificar.Text = registro["nombre"].ToString();
+                TxtEdadModificar.Text = registro["edad"].ToString();
+                BtnInsertar.IsEnabled = true;
+            }
+            else
+            {
+                MessageBox.Show("No existe el artículo con el código ingresado");
+            }
+               
+            conexion.Close();
+        }
+
+        private void BtnModifica_Click(object sender, RoutedEventArgs e)
+        {
+            conexion.Open();
+            string id = TxtIDModificar.Text;
+            string nombre = TxtNombreModificar.Text;
+            string edad = TxtEdadModificar.Text;
+            string cadena = "update Personas set nombre='" + nombre + "', edad=" + edad + "where id=" + id;
+            SqlCommand comando = new SqlCommand(cadena, conexion);
+            int cant;
+            cant = comando.ExecuteNonQuery();
+            if (cant == 1)
+            {
+                MessageBox.Show("Se han modificado los datos del artículo");
+                TxtIDModificar.Text = "";
+                TxtNombreModificar.Text = "";
+                TxtEdadModificar.Text = "";
+            }
+            else
+            {
+                MessageBox.Show("No existe el artículo con el códogo ingresado");
+            }
+                
+            conexion.Close();
+            BtnModifica.IsEnabled = false;
         }
     }
 }

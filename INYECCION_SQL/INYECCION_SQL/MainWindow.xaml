@@ -10,27 +10,27 @@
         <StackPanel  Background="Aquamarine" Margin="10,10,596,10">
             <Label Content="INSERTAR" Margin="10,10,10,10">
             </Label>
-            <TextBox Height="23" TextWrapping="Wrap" Text="TextBox" Margin="33,0,57,0" Name="TxtIDInsertar"/>
-            <TextBox Height="23" TextWrapping="Wrap" Text="TextBox" Margin="33,20,57,0" RenderTransformOrigin="0.46,2.04" Name="TxtNombreInsertar"/>
-            <TextBox Height="23" TextWrapping="Wrap" Text="TextBox" Margin="33,20,57,0" RenderTransformOrigin="0.46,2.04" Name="TxtEdadInsertar"/>
-            <Button Content="Botón  insertar" HorizontalAlignment="Center" Width="138" Margin="0,20,0,0" Click="Button_Click"/>
+            <TextBox Height="23" TextWrapping="Wrap"  Margin="33,0,57,0" Name="TxtIDInsertar"/>
+            <TextBox Height="23" TextWrapping="Wrap"  Margin="33,20,57,0" RenderTransformOrigin="0.46,2.04" Name="TxtNombreInsertar"/>
+            <TextBox Height="23" TextWrapping="Wrap"  Margin="33,20,57,0" RenderTransformOrigin="0.46,2.04" Name="TxtEdadInsertar"/>
+            <Button Content="Botón  insertar" HorizontalAlignment="Center" Width="138" Margin="0,20,0,0" Click="Button_Click" Name="BtnInsertar"/>
         </StackPanel>
         <StackPanel  Background="Aquamarine" Margin="215,10,435,10" HorizontalAlignment="Center">
             <Label Content="ELIMINAR" Margin="10,10,14,10" FontSize="16"/>
-            <TextBox Height="23" TextWrapping="Wrap" Text="TextBox" Margin="33,0,57,0" Name="TxtIDEliminar" Width="89"/>
-            <Label Content="Nombre" FontSize="16px" HorizontalAlignment="Center" Margin="0,10,0,0"></Label>
-            <Label Content="Edad" HorizontalAlignment="Center" FontSize="16px" Margin="0,10,0,0"></Label>
-            <Button Name="BtnConsulta" Height="28" Width="104" Content="Consulta" Margin="0,20,0,0"></Button>
-            <Button Name="BtnBorrar" Height="28" Width="104" Content="Borrar" Margin="0,20,0,0"></Button>
+            <TextBox Height="23" TextWrapping="Wrap"  Margin="33,0,57,0" Name="TxtIDEliminar" Width="97"/>
+            <Label Content="Nombre" FontSize="16px" HorizontalAlignment="Center" Margin="0,10,0,0" Name="LabelNombre"></Label>
+            <Label Content="Edad" HorizontalAlignment="Center" FontSize="16px" Margin="0,10,0,0" Name="LabelEdad"></Label>
+            <Button Name="BtnConsulta" Height="28" Width="104" Content="Consulta" Margin="0,20,0,0" Click="BtnConsulta_Click"></Button>
+            <Button Name="BtnBorrar" Height="28" Width="104" Content="Borrar" Margin="0,20,0,0" Click="BtnBorrar_Click"></Button>
 
         </StackPanel >
         <StackPanel Background="Aquamarine" Margin="378,10,221,10">
             <Label Content="MODIFICAR" FontSize="16px"></Label>
             <TextBox Margin="28,20,50,0" Name="TxtIDModificar" HorizontalAlignment="Center" Width="115"/>
-            <Button Name="BtnBusca" Content="Busca" HorizontalAlignment="Center" Margin="28,20,66,0" Width="99"></Button>
+            <Button Name="BtnBusca" Content="Buscar" HorizontalAlignment="Center" Margin="28,20,66,0" Width="99" Click="BtnBusca_Click"></Button>
             <TextBox Name="TxtNombreModificar" HorizontalAlignment="Center" Margin="28,20,50,0" Width="115"></TextBox>
             <TextBox Name="TxtEdadModificar" HorizontalAlignment="Center" Margin="28,20,50,0" Width="115" ></TextBox>
-            <Button Name="BtnModifica" Content="Modifica" Margin="28,20,50,0"></Button>
+            <Button Name="BtnModifica" Content="Modifica" Margin="28,20,50,0" Click="BtnModifica_Click"></Button>
 
         </StackPanel>
         <StackPanel Background="Aquamarine" Margin="589,0,0,10">
