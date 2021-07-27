@@ -136,7 +136,7 @@ namespace LISTADO_ALUMNO
             {
                 rep1 = 0;
             }
-            string cadena = "update  TABLA_ALUMNOS set DNI='" + docun + "',Nombre='" + nomb + "',Turno='" + tur + "',Sexo='" + sex + "',Especialidad='" + espe + "',Modulo='" + modu + "', Repetidor=" + rep1 ;
+            string cadena = "update  TABLA_ALUMNOS set DNI='" + docun + "',Nombre='" + nomb + "',Turno='" + tur + "',Sexo='" + sex + "',Especialidad='" + espe + "',Modulo='" + modu + "', Repetidor=" + rep1+ "where DNI='"+docun+"'";
             SqlCommand comando = new SqlCommand(cadena, conexion);
             int cant;
             cant = comando.ExecuteNonQuery();
