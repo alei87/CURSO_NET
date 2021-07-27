@@ -286,6 +286,7 @@ namespace LISTADO_ALUMNO
             this.BtnBaja.TabIndex = 18;
             this.BtnBaja.Text = "Baja";
             this.BtnBaja.UseVisualStyleBackColor = true;
+            this.BtnBaja.Click += new System.EventHandler(this.BtnBaja_Click);
             // 
             // BtnModificar
             // 
@@ -295,6 +296,7 @@ namespace LISTADO_ALUMNO
             this.BtnModificar.TabIndex = 19;
             this.BtnModificar.Text = "Modi";
             this.BtnModificar.UseVisualStyleBackColor = true;
+            this.BtnModificar.Click += new System.EventHandler(this.BtnModificar_Click);
             // 
             // dataGridView1
             // 

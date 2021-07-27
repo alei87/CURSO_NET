@@ -91,5 +91,36 @@ namespace LISTADO_ALUMNO
             }
 
         }
+
+        private void BtnBaja_Click(object sender, EventArgs e)
+        {
+            conexion.Open();
+            string docun = TxtDNI.Text;
+            string cadena = "delete from TABLA_ALUMNOS where DNI="+"'"+docun+"'" ;
+            SqlCommand comando = new SqlCommand(cadena, conexion);
+            int cant;
+            cant = comando.ExecuteNonQuery();
+            if (cant == 1)
+            {
+                TxtDNI.Text = "";
+                TxtNombre.Text = "";
+                CmbTurno.Text = "";
+                CmbSexo.Text = "";
+                CmbEspecialidad.Text = "";
+                CmbModulo.Text = "";
+                checkBox1.Text = "";
+
+                MessageBox.Show("Se ha borrado el alumno");
+            }
+
+            conexion.Close();
+            dataGridView1.DataSource = AlumnoLinq.spCargarGrid_Alumnos();
+
+        }
+
+        private void BtnModificar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
