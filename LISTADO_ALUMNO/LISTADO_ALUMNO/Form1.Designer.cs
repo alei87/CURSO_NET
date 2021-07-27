@@ -40,12 +40,12 @@ namespace LISTADO_ALUMNO
             this.label5 = new System.Windows.Forms.Label();
             this.CmbSexo = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.TxtCodigoBusqueda = new System.Windows.Forms.TextBox();
-            this.BtnCodigo = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
-            this.TxtDNIBusqueda = new System.Windows.Forms.TextBox();
             this.BtnDNIBusqueda = new System.Windows.Forms.Button();
+            this.TxtDNIBusqueda = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.BtnCodigo = new System.Windows.Forms.Button();
+            this.TxtCodigoBusqueda = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.CmbEspecialidad = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -163,30 +163,22 @@ namespace LISTADO_ALUMNO
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Búsqueda";
             // 
-            // label6
+            // BtnDNIBusqueda
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 32);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(40, 13);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "Código";
+            this.BtnDNIBusqueda.Location = new System.Drawing.Point(158, 51);
+            this.BtnDNIBusqueda.Name = "BtnDNIBusqueda";
+            this.BtnDNIBusqueda.Size = new System.Drawing.Size(49, 23);
+            this.BtnDNIBusqueda.TabIndex = 5;
+            this.BtnDNIBusqueda.Text = "DNI";
+            this.BtnDNIBusqueda.UseVisualStyleBackColor = true;
+            this.BtnDNIBusqueda.Click += new System.EventHandler(this.BtnDNIBusqueda_Click);
             // 
-            // TxtCodigoBusqueda
+            // TxtDNIBusqueda
             // 
-            this.TxtCodigoBusqueda.Location = new System.Drawing.Point(61, 25);
-            this.TxtCodigoBusqueda.Name = "TxtCodigoBusqueda";
-            this.TxtCodigoBusqueda.Size = new System.Drawing.Size(75, 20);
-            this.TxtCodigoBusqueda.TabIndex = 1;
-            // 
-            // BtnCodigo
-            // 
-            this.BtnCodigo.Location = new System.Drawing.Point(158, 22);
-            this.BtnCodigo.Name = "BtnCodigo";
-            this.BtnCodigo.Size = new System.Drawing.Size(49, 23);
-            this.BtnCodigo.TabIndex = 2;
-            this.BtnCodigo.Text = "Código";
-            this.BtnCodigo.UseVisualStyleBackColor = true;
+            this.TxtDNIBusqueda.Location = new System.Drawing.Point(61, 55);
+            this.TxtDNIBusqueda.Name = "TxtDNIBusqueda";
+            this.TxtDNIBusqueda.Size = new System.Drawing.Size(75, 20);
+            this.TxtDNIBusqueda.TabIndex = 4;
             // 
             // label7
             // 
@@ -197,21 +189,31 @@ namespace LISTADO_ALUMNO
             this.label7.TabIndex = 3;
             this.label7.Text = "DNI";
             // 
-            // TxtDNIBusqueda
+            // BtnCodigo
             // 
-            this.TxtDNIBusqueda.Location = new System.Drawing.Point(61, 55);
-            this.TxtDNIBusqueda.Name = "TxtDNIBusqueda";
-            this.TxtDNIBusqueda.Size = new System.Drawing.Size(75, 20);
-            this.TxtDNIBusqueda.TabIndex = 4;
+            this.BtnCodigo.Location = new System.Drawing.Point(158, 22);
+            this.BtnCodigo.Name = "BtnCodigo";
+            this.BtnCodigo.Size = new System.Drawing.Size(49, 23);
+            this.BtnCodigo.TabIndex = 2;
+            this.BtnCodigo.Text = "Código";
+            this.BtnCodigo.UseVisualStyleBackColor = true;
+            this.BtnCodigo.Click += new System.EventHandler(this.BtnCodigo_Click);
             // 
-            // BtnDNIBusqueda
+            // TxtCodigoBusqueda
             // 
-            this.BtnDNIBusqueda.Location = new System.Drawing.Point(158, 51);
-            this.BtnDNIBusqueda.Name = "BtnDNIBusqueda";
-            this.BtnDNIBusqueda.Size = new System.Drawing.Size(49, 23);
-            this.BtnDNIBusqueda.TabIndex = 5;
-            this.BtnDNIBusqueda.Text = "DNI";
-            this.BtnDNIBusqueda.UseVisualStyleBackColor = true;
+            this.TxtCodigoBusqueda.Location = new System.Drawing.Point(61, 25);
+            this.TxtCodigoBusqueda.Name = "TxtCodigoBusqueda";
+            this.TxtCodigoBusqueda.Size = new System.Drawing.Size(75, 20);
+            this.TxtCodigoBusqueda.TabIndex = 1;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(6, 32);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(40, 13);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Código";
             // 
             // label8
             // 
@@ -225,6 +227,11 @@ namespace LISTADO_ALUMNO
             // CmbEspecialidad
             // 
             this.CmbEspecialidad.FormattingEnabled = true;
+            this.CmbEspecialidad.Items.AddRange(new object[] {
+            "Todos",
+            "Infomatica de sistemas",
+            "Diseño web",
+            "Programación .NET"});
             this.CmbEspecialidad.Location = new System.Drawing.Point(113, 155);
             this.CmbEspecialidad.Name = "CmbEspecialidad";
             this.CmbEspecialidad.Size = new System.Drawing.Size(134, 21);
@@ -269,6 +276,7 @@ namespace LISTADO_ALUMNO
             this.BtnAlta.TabIndex = 17;
             this.BtnAlta.Text = "Alta";
             this.BtnAlta.UseVisualStyleBackColor = true;
+            this.BtnAlta.Click += new System.EventHandler(this.BtnAlta_Click);
             // 
             // BtnBaja
             // 
