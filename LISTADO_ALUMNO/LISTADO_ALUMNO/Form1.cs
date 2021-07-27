@@ -120,6 +120,43 @@ namespace LISTADO_ALUMNO
 
         private void BtnModificar_Click(object sender, EventArgs e)
         {
+            conexion.Open();
+            string docun = TxtDNI.Text;
+            string nomb = TxtNombre.Text;
+            string tur = CmbTurno.Text;
+            string sex = CmbSexo.Text;
+            string espe = CmbEspecialidad.Text;
+            string modu = CmbModulo.Text;
+            int rep1 = 0;
+            if (checkBox1.Checked == true)
+            {
+                rep1 = 1;
+            }
+            else
+            {
+                rep1 = 0;
+            }
+            string cadena = "update  TABLA_ALUMNOS set DNI='" + docun + "',Nombre='" + nomb + "',Turno='" + tur + "',Sexo='" + sex + "',Especialidad='" + espe + "',Modulo='" + modu + "', Repetidor=" + rep1 ;
+            SqlCommand comando = new SqlCommand(cadena, conexion);
+            int cant;
+            cant = comando.ExecuteNonQuery();
+            if (cant == 1)
+            {
+                MessageBox.Show("Se han modificado los datos");
+                TxtDNI.Text = "";
+                TxtNombre.Text = "";
+                CmbTurno.Text = "";
+                CmbSexo.Text = "";
+                CmbEspecialidad.Text = "";
+                CmbModulo.Text = "";
+                checkBox1.Text = "";
+
+            }
+
+            conexion.Close();
+            dataGridView1.DataSource = AlumnoLinq.spCargarGrid_Alumnos();
+
+
 
         }
     }
