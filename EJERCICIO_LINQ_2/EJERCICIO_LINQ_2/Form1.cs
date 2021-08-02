@@ -25,6 +25,10 @@ namespace EJERCICIO_LINQ_2
             var cargaGrid = from p in superBase.Empleados select p; //llamo a la tabla que hago referencia
                             
            dataGridView1.DataSource = cargaGrid;
+            var contar = from Empleados in superBase.Empleados
+                         select Empleados;
+            int num = contar.Count();
+            labelContar.Text = num.ToString();
         }
         
 
@@ -116,7 +120,9 @@ namespace EJERCICIO_LINQ_2
 
         private void labelContar_Click(object sender, EventArgs e)
         {
-    
+           
+
+
         }
     }
 }
