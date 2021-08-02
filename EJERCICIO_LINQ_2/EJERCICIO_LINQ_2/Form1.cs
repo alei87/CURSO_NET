@@ -36,24 +36,71 @@ namespace EJERCICIO_LINQ_2
 
         private void btnAlta_Click(object sender, EventArgs e)
         {
-            Empleados MyEmpleados = new Empleados();
-            MyEmpleados.id = int.Parse(txtID.Text);
-            MyEmpleados.Nombre = txtNombre.Text;
-            MyEmpleados.Apellidos = txtApellido.Text;
-            MyEmpleados.Edad = int.Parse(txtEdad.Text);
-            MyEmpleados.Casado = checkBox1.Checked;
-            superBase.Empleados.InsertOnSubmit(MyEmpleados);
-            superBase.SubmitChanges();
-            cargarGrid();
+            try
+            {
+
+                Empleados MyEmpleados = new Empleados();
+                MyEmpleados.id = int.Parse(txtID.Text);
+                MyEmpleados.Nombre = txtNombre.Text;
+                MyEmpleados.Apellidos = txtApellido.Text;
+                MyEmpleados.Edad = int.Parse(txtEdad.Text);
+                MyEmpleados.Casado = checkBox1.Checked;
+                superBase.Empleados.InsertOnSubmit(MyEmpleados);
+                superBase.SubmitChanges();
+                cargarGrid();
+            }
+            catch
+            {
+                if(txtID.Text=="" && txtNombre.Text=="" && txtApellido.Text=="" && txtEdad.Text=="")
+                {
+                    MessageBox.Show("Falta algún campo por rellenar");
+                }
+            }
         }
 
         private void btnBaja_Click(object sender, EventArgs e)
         {
-            Empleados myEmpleados = superBase.Empleados.Single(p =>
-             p.id == Int32.Parse(txtID.Text));
-            superBase.Empleados.DeleteOnSubmit(myEmpleados);
-            superBase.SubmitChanges();
-            cargarGrid();
+            try
+            {
+
+
+                Empleados myEmpleados = superBase.Empleados.Single(p =>
+                 p.id == Int32.Parse(txtID.Text));
+                superBase.Empleados.DeleteOnSubmit(myEmpleados);
+                superBase.SubmitChanges();
+                cargarGrid();
+            }
+            catch
+            {
+                if (txtID.Text == "")
+                {
+                    MessageBox.Show("Introduzaca ID del empleado");
+                }
+            }
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+
+                Empleados myEmpleados = superBase.Empleados.Single(p =>
+                 p.id == Int32.Parse(txtID.Text));
+                myEmpleados.Nombre = txtNombre.Text;
+                myEmpleados.Apellidos = (txtApellido.Text);
+                myEmpleados.Edad = Int32.Parse(txtEdad.Text);
+                myEmpleados.Casado = checkBox1.Checked;
+                superBase.SubmitChanges();
+                cargarGrid();
+            }
+            catch
+            {
+                if (txtID.Text == "")
+                {
+                    MessageBox.Show("Introduzca Id para modificar el empleado");
+                }
+            }
         }
     }
 }

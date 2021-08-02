@@ -167,6 +167,7 @@ namespace EJERCICIO_LINQ_2
             this.btnModificar.TabIndex = 13;
             this.btnModificar.Text = "Modif.";
             this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // txtBuscar
             // 
