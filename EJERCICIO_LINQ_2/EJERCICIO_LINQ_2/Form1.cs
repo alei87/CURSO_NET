@@ -102,5 +102,21 @@ namespace EJERCICIO_LINQ_2
                 }
             }
         }
+
+        private void BtnBuscar_Click(object sender, EventArgs e)
+        {
+            string nom = txtBuscar.Text;
+            var busq = from Empleados in superBase.Empleados
+                       where Empleados.Nombre.Contains(nom)
+            
+                                       select Empleados;
+            dataGridView1.DataSource = busq;
+
+        }
+
+        private void labelContar_Click(object sender, EventArgs e)
+        {
+    
+        }
     }
 }

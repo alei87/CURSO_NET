@@ -45,6 +45,7 @@ namespace EJERCICIO_LINQ_2
             this.btnModificar = new System.Windows.Forms.Button();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.labelContar = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -64,6 +65,7 @@ namespace EJERCICIO_LINQ_2
             this.BtnBuscar.TabIndex = 1;
             this.BtnBuscar.Text = "BUSCAR";
             this.BtnBuscar.UseVisualStyleBackColor = true;
+            this.BtnBuscar.Click += new System.EventHandler(this.BtnBuscar_Click);
             // 
             // label1
             // 
@@ -185,11 +187,22 @@ namespace EJERCICIO_LINQ_2
             this.label5.TabIndex = 15;
             this.label5.Text = "Sistema de Gestión de Hospital";
             // 
+            // labelContar
+            // 
+            this.labelContar.AutoSize = true;
+            this.labelContar.Location = new System.Drawing.Point(145, 388);
+            this.labelContar.Name = "labelContar";
+            this.labelContar.Size = new System.Drawing.Size(13, 13);
+            this.labelContar.TabIndex = 16;
+            this.labelContar.Text = "0";
+            this.labelContar.Click += new System.EventHandler(this.labelContar_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.labelContar);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtBuscar);
             this.Controls.Add(this.btnModificar);
@@ -233,6 +246,7 @@ namespace EJERCICIO_LINQ_2
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.TextBox txtBuscar;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label labelContar;
     }
 }
 
