@@ -38,7 +38,7 @@ namespace EJERCICIO_LINQ_2
             this.label3 = new System.Windows.Forms.Label();
             this.txtApellido = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtEdad = new System.Windows.Forms.TextBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.btnAlta = new System.Windows.Forms.Button();
             this.btnBaja = new System.Windows.Forms.Button();
@@ -51,9 +51,9 @@ namespace EJERCICIO_LINQ_2
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(326, 68);
+            this.dataGridView1.Location = new System.Drawing.Point(270, 68);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(448, 347);
+            this.dataGridView1.Size = new System.Drawing.Size(504, 347);
             this.dataGridView1.TabIndex = 0;
             // 
             // BtnBuscar
@@ -122,12 +122,12 @@ namespace EJERCICIO_LINQ_2
             this.label4.TabIndex = 8;
             this.label4.Text = "Edad:";
             // 
-            // textBox1
+            // txtEdad
             // 
-            this.textBox1.Location = new System.Drawing.Point(102, 217);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(124, 20);
-            this.textBox1.TabIndex = 9;
+            this.txtEdad.Location = new System.Drawing.Point(102, 217);
+            this.txtEdad.Name = "txtEdad";
+            this.txtEdad.Size = new System.Drawing.Size(124, 20);
+            this.txtEdad.TabIndex = 9;
             // 
             // checkBox1
             // 
@@ -147,19 +147,21 @@ namespace EJERCICIO_LINQ_2
             this.btnAlta.TabIndex = 11;
             this.btnAlta.Text = "Alta";
             this.btnAlta.UseVisualStyleBackColor = true;
+            this.btnAlta.Click += new System.EventHandler(this.btnAlta_Click);
             // 
             // btnBaja
             // 
-            this.btnBaja.Location = new System.Drawing.Point(31, 344);
+            this.btnBaja.Location = new System.Drawing.Point(31, 342);
             this.btnBaja.Name = "btnBaja";
             this.btnBaja.Size = new System.Drawing.Size(75, 23);
             this.btnBaja.TabIndex = 12;
             this.btnBaja.Text = "Baja";
             this.btnBaja.UseVisualStyleBackColor = true;
+            this.btnBaja.Click += new System.EventHandler(this.btnBaja_Click);
             // 
             // btnModificar
             // 
-            this.btnModificar.Location = new System.Drawing.Point(31, 392);
+            this.btnModificar.Location = new System.Drawing.Point(31, 383);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(75, 23);
             this.btnModificar.TabIndex = 13;
@@ -193,7 +195,7 @@ namespace EJERCICIO_LINQ_2
             this.Controls.Add(this.btnBaja);
             this.Controls.Add(this.btnAlta);
             this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtEdad);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtApellido);
             this.Controls.Add(this.label3);
@@ -205,6 +207,7 @@ namespace EJERCICIO_LINQ_2
             this.Controls.Add(this.dataGridView1);
             this.Name = "Form1";
             this.Text = "Gestion Hospital";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -222,7 +225,7 @@ namespace EJERCICIO_LINQ_2
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtApellido;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtEdad;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Button btnAlta;
         private System.Windows.Forms.Button btnBaja;
