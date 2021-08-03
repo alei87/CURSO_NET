@@ -121,8 +121,6 @@ namespace EJERCICIO_LINQ_2
         private void labelContar_Click(object sender, EventArgs e)
         {
            
-
-
         }
     }
 }
