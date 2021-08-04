@@ -16,7 +16,7 @@ namespace HUCANET
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new rdbForm1());
+            Application.Run(new Form1());
         }
     }
 }

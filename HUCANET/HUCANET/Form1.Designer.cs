@@ -1,7 +1,7 @@
 ﻿
 namespace HUCANET
 {
-    partial class rdbForm1
+    partial class Form1
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -37,7 +37,6 @@ namespace HUCANET
             this.label6 = new System.Windows.Forms.Label();
             this.TxtInscripcion = new System.Windows.Forms.TextBox();
             this.TxtNombre = new System.Windows.Forms.TextBox();
-            this.txtFecha = new System.Windows.Forms.TextBox();
             this.txtDireccion = new System.Windows.Forms.TextBox();
             this.TxtNumero = new System.Windows.Forms.TextBox();
             this.rdbMale = new System.Windows.Forms.RadioButton();
@@ -48,6 +47,8 @@ namespace HUCANET
             this.btnBorrar = new System.Windows.Forms.Button();
             this.BtnSalir = new System.Windows.Forms.Button();
             this.dataGridDatos = new System.Windows.Forms.DataGridView();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.txtDatos = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridDatos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -119,13 +120,6 @@ namespace HUCANET
             this.TxtNombre.Size = new System.Drawing.Size(173, 20);
             this.TxtNombre.TabIndex = 7;
             // 
-            // txtFecha
-            // 
-            this.txtFecha.Location = new System.Drawing.Point(173, 161);
-            this.txtFecha.Name = "txtFecha";
-            this.txtFecha.Size = new System.Drawing.Size(173, 20);
-            this.txtFecha.TabIndex = 8;
-            // 
             // txtDireccion
             // 
             this.txtDireccion.Location = new System.Drawing.Point(173, 216);
@@ -164,7 +158,7 @@ namespace HUCANET
             // 
             // BtnGrabar
             // 
-            this.BtnGrabar.Location = new System.Drawing.Point(3, 372);
+            this.BtnGrabar.Location = new System.Drawing.Point(3, 355);
             this.BtnGrabar.Name = "BtnGrabar";
             this.BtnGrabar.Size = new System.Drawing.Size(75, 23);
             this.BtnGrabar.TabIndex = 13;
@@ -173,7 +167,7 @@ namespace HUCANET
             // 
             // BtnRead
             // 
-            this.BtnRead.Location = new System.Drawing.Point(84, 372);
+            this.BtnRead.Location = new System.Drawing.Point(84, 355);
             this.BtnRead.Name = "BtnRead";
             this.BtnRead.Size = new System.Drawing.Size(75, 23);
             this.BtnRead.TabIndex = 14;
@@ -182,25 +176,27 @@ namespace HUCANET
             // 
             // btnInsertar
             // 
-            this.btnInsertar.Location = new System.Drawing.Point(165, 372);
+            this.btnInsertar.Location = new System.Drawing.Point(165, 355);
             this.btnInsertar.Name = "btnInsertar";
             this.btnInsertar.Size = new System.Drawing.Size(75, 23);
             this.btnInsertar.TabIndex = 15;
             this.btnInsertar.Text = "Insertar";
             this.btnInsertar.UseVisualStyleBackColor = true;
+            this.btnInsertar.Click += new System.EventHandler(this.btnInsertar_Click);
             // 
             // btnBorrar
             // 
-            this.btnBorrar.Location = new System.Drawing.Point(246, 372);
+            this.btnBorrar.Location = new System.Drawing.Point(246, 355);
             this.btnBorrar.Name = "btnBorrar";
             this.btnBorrar.Size = new System.Drawing.Size(75, 23);
             this.btnBorrar.TabIndex = 16;
             this.btnBorrar.Text = "Borrar";
             this.btnBorrar.UseVisualStyleBackColor = true;
+            this.btnBorrar.Click += new System.EventHandler(this.btnBorrar_Click);
             // 
             // BtnSalir
             // 
-            this.BtnSalir.Location = new System.Drawing.Point(327, 372);
+            this.BtnSalir.Location = new System.Drawing.Point(327, 355);
             this.BtnSalir.Name = "BtnSalir";
             this.BtnSalir.Size = new System.Drawing.Size(75, 23);
             this.BtnSalir.TabIndex = 17;
@@ -215,12 +211,28 @@ namespace HUCANET
             this.dataGridDatos.Size = new System.Drawing.Size(380, 415);
             this.dataGridDatos.TabIndex = 18;
             // 
-            // rdbForm1
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(173, 161);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(173, 20);
+            this.dateTimePicker1.TabIndex = 19;
+            // 
+            // txtDatos
+            // 
+            this.txtDatos.Location = new System.Drawing.Point(12, 401);
+            this.txtDatos.Name = "txtDatos";
+            this.txtDatos.Size = new System.Drawing.Size(370, 20);
+            this.txtDatos.TabIndex = 20;
+            // 
+            // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtDatos);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.dataGridDatos);
             this.Controls.Add(this.BtnSalir);
             this.Controls.Add(this.btnBorrar);
@@ -231,7 +243,6 @@ namespace HUCANET
             this.Controls.Add(this.rdbMale);
             this.Controls.Add(this.TxtNumero);
             this.Controls.Add(this.txtDireccion);
-            this.Controls.Add(this.txtFecha);
             this.Controls.Add(this.TxtNombre);
             this.Controls.Add(this.TxtInscripcion);
             this.Controls.Add(this.label6);
@@ -240,8 +251,9 @@ namespace HUCANET
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "rdbForm1";
+            this.Name = "Form1";
             this.Text = "Sistema de Gestón de Hospital";
+            this.Load += new System.EventHandler(this.Form1_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridDatos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -258,7 +270,6 @@ namespace HUCANET
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox TxtInscripcion;
         private System.Windows.Forms.TextBox TxtNombre;
-        private System.Windows.Forms.TextBox txtFecha;
         private System.Windows.Forms.TextBox txtDireccion;
         private System.Windows.Forms.TextBox TxtNumero;
         private System.Windows.Forms.RadioButton rdbMale;
@@ -269,6 +280,8 @@ namespace HUCANET
         private System.Windows.Forms.Button btnBorrar;
         private System.Windows.Forms.Button BtnSalir;
         private System.Windows.Forms.DataGridView dataGridDatos;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.TextBox txtDatos;
     }
 }
 
