@@ -41,7 +41,7 @@ namespace HUCANET
             this.TxtNumero = new System.Windows.Forms.TextBox();
             this.rdbMale = new System.Windows.Forms.RadioButton();
             this.rbtFemale = new System.Windows.Forms.RadioButton();
-            this.BtnGrabar = new System.Windows.Forms.Button();
+            this.BtnModificar = new System.Windows.Forms.Button();
             this.BtnRead = new System.Windows.Forms.Button();
             this.btnInsertar = new System.Windows.Forms.Button();
             this.btnBorrar = new System.Windows.Forms.Button();
@@ -156,14 +156,15 @@ namespace HUCANET
             this.rbtFemale.Text = "Female";
             this.rbtFemale.UseVisualStyleBackColor = true;
             // 
-            // BtnGrabar
+            // BtnModificar
             // 
-            this.BtnGrabar.Location = new System.Drawing.Point(3, 355);
-            this.BtnGrabar.Name = "BtnGrabar";
-            this.BtnGrabar.Size = new System.Drawing.Size(75, 23);
-            this.BtnGrabar.TabIndex = 13;
-            this.BtnGrabar.Text = "Grabar";
-            this.BtnGrabar.UseVisualStyleBackColor = true;
+            this.BtnModificar.Location = new System.Drawing.Point(3, 355);
+            this.BtnModificar.Name = "BtnModificar";
+            this.BtnModificar.Size = new System.Drawing.Size(75, 23);
+            this.BtnModificar.TabIndex = 13;
+            this.BtnModificar.Text = "Modificar";
+            this.BtnModificar.UseVisualStyleBackColor = true;
+            this.BtnModificar.Click += new System.EventHandler(this.BtnModificar_Click);
             // 
             // BtnRead
             // 
@@ -202,6 +203,7 @@ namespace HUCANET
             this.BtnSalir.TabIndex = 17;
             this.BtnSalir.Text = "Salir";
             this.BtnSalir.UseVisualStyleBackColor = true;
+            this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
             // 
             // dataGridDatos
             // 
@@ -238,7 +240,7 @@ namespace HUCANET
             this.Controls.Add(this.btnBorrar);
             this.Controls.Add(this.btnInsertar);
             this.Controls.Add(this.BtnRead);
-            this.Controls.Add(this.BtnGrabar);
+            this.Controls.Add(this.BtnModificar);
             this.Controls.Add(this.rbtFemale);
             this.Controls.Add(this.rdbMale);
             this.Controls.Add(this.TxtNumero);
@@ -274,7 +276,7 @@ namespace HUCANET
         private System.Windows.Forms.TextBox TxtNumero;
         private System.Windows.Forms.RadioButton rdbMale;
         private System.Windows.Forms.RadioButton rbtFemale;
-        private System.Windows.Forms.Button BtnGrabar;
+        private System.Windows.Forms.Button BtnModificar;
         private System.Windows.Forms.Button BtnRead;
         private System.Windows.Forms.Button btnInsertar;
         private System.Windows.Forms.Button btnBorrar;

@@ -78,7 +78,7 @@ namespace HUCANET
             try
             {
                 Pacientes myPaciente=baseHospital.Pacientes.Single(p=>
-                p.Inscripcion==TxtInscripcion.Text));
+                p.Inscripcion==TxtInscripcion.Text);
                 baseHospital.Pacientes.DeleteOnSubmit(myPaciente);
                 baseHospital.SubmitChanges();
                 cargarGid();
@@ -91,6 +91,45 @@ namespace HUCANET
                     txtDatos.Text = "Falta la inscripcion del paciente";
                 }
             }
+        }
+
+        private void BtnModificar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Pacientes myPaciente = baseHospital.Pacientes.Single(p =>
+                 p.Inscripcion == TxtInscripcion.Text);
+                myPaciente.Nombre_Apellidos = TxtNombre.Text;
+                if (rdbMale.Checked == true)
+                {
+                    myPaciente.Sexo = "h";
+                }
+                else
+                {
+                    if (rbtFemale.Checked == true)
+                    {
+                        myPaciente.Sexo = "m";
+                    }
+                }
+                myPaciente.Fecha = dateTimePicker1.Value;
+                myPaciente.Direccion = txtDireccion.Text;
+                myPaciente.Numero_SS = TxtNumero.Text;
+                baseHospital.SubmitChanges();
+                cargarGid();
+                txtDatos.Text = "Los datos se han modificado correctamente";
+            }
+            catch
+            {
+                if (TxtInscripcion.Text == "")
+                {
+                    txtDatos.Text = "Necesita la inscipcion del paciente para modificar los datos";
+                }
+            }
+        }
+
+        private void BtnSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
