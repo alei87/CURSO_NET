@@ -174,16 +174,16 @@ namespace Ejercicio_Filtros
         void cargarGridFechas(DateTime  date, DateTime date2 )
         {
             string curso = ComboBox1.Text;
-            DateTime desde = DatePicker1.DisplayDate;
-            DateTime hasta = DatePicker2.DisplayDate;
-            var listagrid = from f in filtros.DatosJueves where f.Curso == curso && f.Fecha_Ins > desde f.Fecha_Cont> hasta select f;
+            var listagrid = from c in filtros.DatosJueves where c.Curso == curso && c.Fecha_Ins >= date &&c.Fecha_Cont<= date2 select c;
             DGV1.ItemsSource = listagrid;
         }
            
 
         private void btnFecha_Click(object sender, RoutedEventArgs e)
         {
-           
+            DateTime desde = DatePicker1.DisplayDate;
+            DateTime hasta = DatePicker2.DisplayDate;
+            cargarGridFechas(desde, hasta);
         }
     }
 }
