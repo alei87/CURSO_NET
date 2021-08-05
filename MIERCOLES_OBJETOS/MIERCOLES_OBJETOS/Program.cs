@@ -43,7 +43,7 @@ namespace MIERCOLES_OBJETOS
                         break;
 
                     case "2":
-                        int num = 0;
+                        int num = 0;  //para recorrer el array almacen
                         foreach (var x in almacen)
                         {
                             x.Mostrar();
