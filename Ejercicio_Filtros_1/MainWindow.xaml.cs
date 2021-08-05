@@ -181,6 +181,7 @@ namespace Ejercicio_Filtros
 
         private void btnFecha_Click(object sender, RoutedEventArgs e)
         {
+            //boton filtro para fecha
             DateTime desde = DatePicker1.DisplayDate;
             DateTime hasta = DatePicker2.DisplayDate;
             cargarGridFechas(desde, hasta);
