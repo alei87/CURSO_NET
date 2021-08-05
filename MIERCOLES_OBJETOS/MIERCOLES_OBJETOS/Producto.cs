@@ -12,10 +12,12 @@ namespace MIERCOLES_OBJETOS
        private double precio;
        private string categoria;
 
+        //constructor por defecto sin parametros
         public Producto()
         {
 
         }
+        //para uso de constructor por defecto
         public Producto(string nombre, double precio, string categoria)
         {
             this.nombre = nombre;
@@ -28,7 +30,7 @@ namespace MIERCOLES_OBJETOS
             this.nombre = nombre;
             this.precio = precio;
         }
-
+        
         public string Nombre
         {
             get { return nombre; }
@@ -46,12 +48,17 @@ namespace MIERCOLES_OBJETOS
             get { return categoria; }
             set { categoria = value; }
         }
+
         
-        public void Pedir()
+        
+
+       
+        public void Mostrar()
         {
-            Console.WriteLine("")
-           for(int cant) 
+            Console.Write("El nombre del producto es: " + this.nombre + "\n su precio es: " + this.precio + "\n su categoria es: " + this.categoria);
         }
+
+        
         
 
     }
