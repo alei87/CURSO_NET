@@ -170,21 +170,49 @@ namespace Ejercicio_Filtros
 
             
         }
-
+        //filtra por fecha de inscipcion
         void cargarGridFechas(DateTime  date, DateTime date2 )
         {
-            string curso = ComboBox1.Text;
-            var listagrid = from c in filtros.DatosJueves where c.Curso == curso && c.Fecha_Ins >= date &&c.Fecha_Cont<= date2 select c;
+            
+            var listagrid = from f in filtros.DatosJueves where f.Fecha_Ins >= date && f.Fecha_Ins<= date2 select f;
             DGV1.ItemsSource = listagrid;
         }
+        void cargaFecha2(DateTime fecha1, DateTime fecha2)
+        {
            
+            var listagrid = from f in filtros.DatosJueves where f.Fecha_Cont >= fecha1 && f.Fecha_Cont <= fecha2 select f;
+            DGV1.ItemsSource = listagrid;
+        }
+
+        void cargaFechaTodo(DateTime date, DateTime date2, DateTime fecha1, DateTime fecha2)
+        {
+            
+            var listagrid = from f in filtros.DatosJueves where f.Fecha_Ins >= date && f.Fecha_Ins <= date2 && f.Fecha_Cont >= fecha1 && f.Fecha_Cont <= fecha2 select f;
+            DGV1.ItemsSource = listagrid;
+        }
+
 
         private void btnFecha_Click(object sender, RoutedEventArgs e)
         {
             //boton filtro para fecha
+
             DateTime desde = DatePicker1.DisplayDate;
             DateTime hasta = DatePicker2.DisplayDate;
-            cargarGridFechas(desde, hasta);
+            DateTime des = DatePicker3.DisplayDate;
+            DateTime has = DatePicker4.DisplayDate;
+
+            if (CheckBox1.IsChecked == true && CheckBox2.IsChecked == true)
+
+                cargarGridFechas(desde, hasta);
+            else if (CheckBox4.IsChecked == true && CheckBox5.IsChecked == true)
+                cargaFecha2(des, has);
+            else if (CheckBox1.IsChecked == true && CheckBox2.IsChecked == true && CheckBox4.IsChecked == true && CheckBox5.IsChecked == true)
+                cargaFechaTodo(desde, hasta, des, has);
+            else cargarGrid();
+                 
+
+
+
         }
     }
 }
