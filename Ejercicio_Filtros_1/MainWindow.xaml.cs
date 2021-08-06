@@ -90,8 +90,6 @@ namespace Ejercicio_Filtros
             var listagrid = from f in filtros.DatosJueves where f.Curso == curso && f.Nombre.Contains(cadena) && f.Apellidos.Contains(cadena2) select f;
             DGV1.ItemsSource = listagrid;
         }
-
-
         /// <summary>
         /// Habilitar y deshabilitar Check
         /// </summary>
@@ -100,7 +98,6 @@ namespace Ejercicio_Filtros
             DatePicker1.IsEnabled = true;
 
         }
-
         private void CheckBox1_UnChecked(object sender, RoutedEventArgs e)
         {
             DatePicker1.IsEnabled = false;
@@ -149,41 +146,35 @@ namespace Ejercicio_Filtros
             CheckBox4.IsEnabled = true;
             CheckBox5.IsEnabled = true;
         }
-
         private void CheckBox3_UnChecked(object sender, RoutedEventArgs e)
         {
             CheckBox4.IsEnabled = false;
             CheckBox5.IsEnabled = false;
-
         }
-
         private void Button1_Click(object sender, RoutedEventArgs e)
         {
             if (TextBox1.Text != "" && TextBox2.Text != "")
-            
                 cargarGridApellidoNombre(TextBox1.Text, TextBox2.Text);
                 else if (TextBox1.Text != "" && TextBox2.Text == "")
                     cargarGridNombre(TextBox1.Text);
                 else if (TextBox1.Text == "" && TextBox2.Text != "")
                     cargarGridApellido(TextBox2.Text);
                 else cargarGridCurso();
-
-            
+  
         }
         //filtra por fecha de inscipcion
         void cargarGridFechas(DateTime  date, DateTime date2 )
-        {
-            
+        { 
             var listagrid = from f in filtros.DatosJueves where f.Fecha_Ins >= date && f.Fecha_Ins<= date2 select f;
             DGV1.ItemsSource = listagrid;
         }
+        //metodo para filtar decha de contratacion
         void cargaFecha2(DateTime fecha1, DateTime fecha2)
         {
-           
             var listagrid = from f in filtros.DatosJueves where f.Fecha_Cont >= fecha1 && f.Fecha_Cont <= fecha2 select f;
             DGV1.ItemsSource = listagrid;
         }
-
+        //filtro para las 4 fechas
         void cargaFechaTodo(DateTime date, DateTime date2, DateTime fecha1, DateTime fecha2)
         {
             
@@ -191,11 +182,9 @@ namespace Ejercicio_Filtros
             DGV1.ItemsSource = listagrid;
         }
 
-
         private void btnFecha_Click(object sender, RoutedEventArgs e)
         {
-            //boton filtro para fecha
-
+            //boton filtro para fechas
             DateTime desde = DatePicker1.DisplayDate;
             DateTime hasta = DatePicker2.DisplayDate;
             DateTime des = DatePicker3.DisplayDate;
@@ -210,9 +199,6 @@ namespace Ejercicio_Filtros
                 cargaFechaTodo(desde, hasta, des, has);
             else cargarGrid();
                  
-
-
-
         }
     }
 }
