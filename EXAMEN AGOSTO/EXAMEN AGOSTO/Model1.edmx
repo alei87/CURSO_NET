@@ -37,7 +37,7 @@
           <Property Name="E_MAIL" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
           <Property Name="FECHA_NACIMIENTO" Type="DateTime" Precision="3" />
         </EntityType>
-        <EntityContainer Name="RepasoAgostoEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="RepasoAgostoEntities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="CLIENTES" EntityType="Self.CLIENTES" />
         </EntityContainer>
       </Schema>
@@ -45,7 +45,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="RepasoAgostoModelStoreContainer" CdmEntityContainer="RepasoAgostoEntities">
+        <EntityContainerMapping StorageEntityContainer="RepasoAgostoModelStoreContainer" CdmEntityContainer="RepasoAgostoEntities1">
           <EntitySetMapping Name="CLIENTES">
             <EntityTypeMapping TypeName="RepasoAgostoModel.CLIENTES">
               <MappingFragment StoreEntitySet="CLIENTES">

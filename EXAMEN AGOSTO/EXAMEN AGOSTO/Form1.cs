@@ -12,7 +12,7 @@ namespace EXAMEN_AGOSTO
 {
     public partial class Form1 : Form
     {   //AÑADIMOS EL CONTEXTO DE ENTUDADES
-        RepasoAgostoEntities ClientesEntity = new RepasoAgostoEntities();
+        RepasoAgostoEntities1 ClientesEntity = new RepasoAgostoEntities1();
     
         public Form1()
         {

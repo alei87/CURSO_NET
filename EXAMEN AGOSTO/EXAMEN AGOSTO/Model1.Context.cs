@@ -13,10 +13,10 @@ namespace EXAMEN_AGOSTO
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class RepasoAgostoEntities : DbContext
+    public partial class RepasoAgostoEntities1 : DbContext
     {
-        public RepasoAgostoEntities()
-            : base("name=RepasoAgostoEntities")
+        public RepasoAgostoEntities1()
+            : base("name=RepasoAgostoEntities1")
         {
         }
     
