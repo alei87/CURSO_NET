@@ -50,6 +50,7 @@ namespace ConsoleApp1
 
         public virtual  void calcularCostoDeDecoracionGala(double persona_decor)
         {
+
             if (Decora == true)
             {
                 Console.WriteLine("Introduzca número de personas");
@@ -68,7 +69,7 @@ namespace ConsoleApp1
             persona_decor = this.costoDeDecoracion;
         }
 
-        public virtual void CalcularCostoGala(double TotalGala=0)
+        public  void CalcularCostoGala(double TotalGala=0)
         {
             TotalGala = this.costoDeDecoracion + this.bonoExtra + this.costoDeComidaPorPersona;
             Console.ReadLine();
