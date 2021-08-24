@@ -17,13 +17,17 @@ namespace HUCANET
             InitializeComponent();
         }
 
+        //definimos el contexto de clases
         DataClasses1DataContext baseHospital = new DataClasses1DataContext();
 
         private void Form1_Load(object sender, EventArgs e)
         {
            
         }
+        //cargamos el grid cuando se abra el formulario
 
+
+        //con linq hacemos una consulta para que cargue el grid
         void cargarGid()
         {
             var cargaGrid = from p in baseHospital.Pacientes select p;
@@ -70,6 +74,7 @@ namespace HUCANET
 
         private void Form1_Load_1(object sender, EventArgs e)
         {
+            //dar doble click en el formulario esto arriba del todo
             cargarGid();
         }
 
@@ -130,6 +135,11 @@ namespace HUCANET
         private void BtnSalir_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void BtnRead_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
