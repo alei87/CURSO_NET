@@ -1,0 +1,10 @@
+C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\EXAMEN_LINQ_ALEIDA\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\EXAMEN_LINQ_ALEIDA\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\EXAMEN_LINQ_ALEIDA\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\EXAMEN_LINQ_ALEIDA\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\EXAMEN_LINQ_ALEIDA\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\EXAMEN_LINQ_ALEIDA\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\EXAMEN_LINQ_ALEIDA\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\EXAMEN_LINQ_ALEIDA\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\EXAMEN_LINQ_ALEIDA\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\EXAMEN_LINQ_ALEIDA\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
