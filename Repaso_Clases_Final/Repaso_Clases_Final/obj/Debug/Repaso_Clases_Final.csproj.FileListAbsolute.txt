@@ -1,0 +1,7 @@
+C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\Repaso_Clases_Final\Repaso_Clases_Final\obj\Debug\Repaso_Clases_Final.csproj.AssemblyReference.cache
+C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\Repaso_Clases_Final\Repaso_Clases_Final\obj\Debug\Repaso_Clases_Final.csproj.CoreCompileInputs.cache
+C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\Repaso_Clases_Final\Repaso_Clases_Final\bin\Debug\Repaso_Clases_Final.exe.config
+C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\Repaso_Clases_Final\Repaso_Clases_Final\bin\Debug\Repaso_Clases_Final.exe
+C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\Repaso_Clases_Final\Repaso_Clases_Final\bin\Debug\Repaso_Clases_Final.pdb
+C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\Repaso_Clases_Final\Repaso_Clases_Final\obj\Debug\Repaso_Clases_Final.exe
+C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\Repaso_Clases_Final\Repaso_Clases_Final\obj\Debug\Repaso_Clases_Final.pdb
