@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31613.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EXAMEN_FINAL_CLASES_ALEIDA", "EXAMEN_FINAL_CLASES_ALEIDA\EXAMEN_FINAL_CLASES_ALEIDA.csproj", "{B4912088-94C3-4641-AA2E-DC84EA6A4C18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EXAMEN_FINAL_CLASES_ALEIDA2", "..\EXAMEN_FINAL_CLASES_ALEIDA2\EXAMEN_FINAL_CLASES_ALEIDA2.csproj", "{8B32C4BD-71E9-4A59-BE1F-4EE84233CA9B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B4912088-94C3-4641-AA2E-DC84EA6A4C18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4912088-94C3-4641-AA2E-DC84EA6A4C18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4912088-94C3-4641-AA2E-DC84EA6A4C18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4912088-94C3-4641-AA2E-DC84EA6A4C18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B32C4BD-71E9-4A59-BE1F-4EE84233CA9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B32C4BD-71E9-4A59-BE1F-4EE84233CA9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B32C4BD-71E9-4A59-BE1F-4EE84233CA9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B32C4BD-71E9-4A59-BE1F-4EE84233CA9B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {89702250-9975-4279-B35E-435AB8DF230A}
+	EndGlobalSection
+EndGlobal

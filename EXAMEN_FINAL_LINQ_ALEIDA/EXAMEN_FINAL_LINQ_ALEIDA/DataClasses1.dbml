@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="EXAMEN_FINAL" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=ASATA402\SQLEXPRESSALEIDA;Initial Catalog=EXAMEN_FINAL;Persist Security Info=True;User ID=sa" SettingsObjectName="EXAMEN_FINAL_LINQ_ALEIDA.Properties.Settings" SettingsPropertyName="EXAMEN_FINALConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.PRODUCTOS" Member="PRODUCTOS">
+    <Type Name="PRODUCTOS">
+      <Column Name="NombreProducto" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PrecioUnidad" Type="System.Decimal" DbType="Decimal(20,2)" CanBeNull="true" />
+      <Column Name="UnidadStock" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.spAltaPRODUCTO" Method="spAltaPRODUCTO">
+    <Parameter Name="NOMBREPRODUCTO" Parameter="nOMBREPRODUCTO" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="PRECIOUNIDAD" Parameter="pRECIOUNIDAD" Type="System.Decimal" DbType="Decimal(20,2)" />
+    <Parameter Name="UNIDADSTOCK" Parameter="uNIDADSTOCK" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spBajaProductoFinal" Method="spBajaProductoFinal">
+    <Parameter Name="NOMBREPRODUCTO" Parameter="nOMBREPRODUCTO" Type="System.String" DbType="VarChar(20)" />
+  </Function>
+  <Function Name="dbo.spBUSCARPRODUCTO" Method="spBUSCARPRODUCTO">
+    <Parameter Name="NOMBREPRODUCTO" Parameter="nOMBREPRODUCTO" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="spBUSCARPRODUCTOResult">
+      <Column Name="NombreProducto" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="PrecioUnidad" Type="System.Decimal" DbType="Decimal(20,2)" CanBeNull="true" />
+      <Column Name="UnidadStock" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.spModificarProductoFinal" Method="spModificarProductoFinal">
+    <Parameter Name="NOMBREPRODUCTO" Parameter="nOMBREPRODUCTO" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="PRECIOUNIDAD" Parameter="pRECIOUNIDAD" Type="System.Decimal" DbType="Decimal(20,2)" />
+    <Parameter Name="UNIDADSTOCK" Parameter="uNIDADSTOCK" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spListarPRODUCTONOMBRE" Method="spListarPRODUCTONOMBRE">
+    <Parameter Name="NOMBREPRODUCTO" Parameter="nOMBREPRODUCTO" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="spListarPRODUCTONOMBREResult">
+      <Column Name="NombreProducto" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.spListarProductos" Method="spListarProductos">
+    <ElementType Name="spListarProductosResult">
+      <Column Name="NombreProducto" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="PrecioUnidad" Type="System.Decimal" DbType="Decimal(20,2)" CanBeNull="true" />
+      <Column Name="UnidadStock" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

@@ -115,12 +115,6 @@ namespace Repaso_Clases_Final
                         Console.ReadLine();
                         break;
 
-
-
-
-
-
-
                 }
             } while (opc != "5");
 
