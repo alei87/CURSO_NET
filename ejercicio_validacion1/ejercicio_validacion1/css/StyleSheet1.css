@@ -1,0 +1,21 @@
+﻿body {
+}
+
+div.filas {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1em;
+    clear: both;
+}
+div.titilos {
+    box-sizing: border-box;
+    width: 40%;
+    float: left;
+    text-align: right;
+    margin-right: 1em;
+}
+div.areas {
+    box-sizing: border-box;
+    float: left;
+    width: 50%;
+}
