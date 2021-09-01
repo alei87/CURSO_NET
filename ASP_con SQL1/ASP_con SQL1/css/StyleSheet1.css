@@ -1,0 +1,33 @@
+﻿body {
+}
+.alta{
+    margin-left:20px;
+    margin-bottom:20px;
+    
+}
+.baja {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.primero {
+    background-color: lightcoral; 
+    border:dotted ;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.segundo {
+    background-color: aquamarine;
+    border: dotted;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
