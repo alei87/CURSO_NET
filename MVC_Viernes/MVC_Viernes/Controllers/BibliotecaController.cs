@@ -9,8 +9,11 @@ namespace MVC_Viernes.Controllers
 {
     public class BibliotecaController : Controller
     {
-        Biblioteca miBiblioteca = new Biblioteca();
+        //creamos la clase biblioteca static pra poder invcarla en el controlador
+        static Biblioteca miBiblioteca = new Biblioteca();
         // GET: Biblioteca
+
+        //lanx¡zamos la vista para mostrar los libros
         public ActionResult Index()
         {
             return View(miBiblioteca.Libros.ToList());
@@ -19,7 +22,7 @@ namespace MVC_Viernes.Controllers
         // GET: Biblioteca/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            return View(miBiblioteca.ObtenerPorIsbn(id.ToString()));
         }
 
         // GET: Biblioteca/Create
@@ -33,8 +36,14 @@ namespace MVC_Viernes.Controllers
         public ActionResult Create(FormCollection collection)
         {
             try
-            {
-                // TODO: Add insert logic here
+            { // TODO: Add insert logic here
+                miBiblioteca.Libros.Add(new Libro
+                {
+                    ISBN = (miBiblioteca.Libros.Count() + 1).ToString(),
+                    Titulo = collection["Titulo"],
+                    TipoLibro = collection["Categoria"]
+                });
+               
 
                 return RedirectToAction("Index");
             }
@@ -47,7 +56,7 @@ namespace MVC_Viernes.Controllers
         // GET: Biblioteca/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            return View(miBiblioteca.ObtenerPorIsbn(id.ToString()));
         }
 
         // POST: Biblioteca/Edit/5
@@ -57,7 +66,14 @@ namespace MVC_Viernes.Controllers
             try
             {
                 // TODO: Add update logic here
-
+                foreach(Libro l in miBiblioteca.Libros)
+                {
+                    if (l.ISBN == id.ToString())
+                    {
+                        l.Titulo = collection["Titulo"];
+                        l.TipoLibro = collection["TipoLibro"];
+                    }
+                }
                 return RedirectToAction("Index");
             }
             catch
@@ -69,7 +85,7 @@ namespace MVC_Viernes.Controllers
         // GET: Biblioteca/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            return View(miBiblioteca.ObtenerPorIsbn(id.ToString()));
         }
 
         // POST: Biblioteca/Delete/5
@@ -79,7 +95,10 @@ namespace MVC_Viernes.Controllers
             try
             {
                 // TODO: Add delete logic here
-
+                foreach(Libro l in miBiblioteca.Libros)
+                {
+                    if (l.ISBN == id.ToString()) miBiblioteca.Libros.Remove(l);
+                }
                 return RedirectToAction("Index");
             }
             catch
