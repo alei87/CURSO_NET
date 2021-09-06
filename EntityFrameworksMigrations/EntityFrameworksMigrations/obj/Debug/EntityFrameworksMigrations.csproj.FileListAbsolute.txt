@@ -75,7 +75,6 @@ C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\EntityFrameworksMigrations
 C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\EntityFrameworksMigrations\EntityFrameworksMigrations\bin\es\System.Web.Webpages.Razor.resources.dll
 C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\EntityFrameworksMigrations\EntityFrameworksMigrations\bin\es\System.Web.Helpers.resources.dll
 C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\EntityFrameworksMigrations\EntityFrameworksMigrations\bin\es\System.Web.Mvc.resources.dll
-C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\EntityFrameworksMigrations\EntityFrameworksMigrations\obj\Debug\EntityFrameworksMigrations.csproj.AssemblyReference.cache
 C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\EntityFrameworksMigrations\EntityFrameworksMigrations\obj\Debug\EntityFrameworksMigrations.csproj.CoreCompileInputs.cache
 C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\EntityFrameworksMigrations\EntityFrameworksMigrations\obj\Debug\EntityFrameworksMigrations.csproj.CopyComplete
 C:\Users\AsataTarde\Desktop\CURSONET\alei87\CURSO_NET\EntityFrameworksMigrations\EntityFrameworksMigrations\obj\Debug\EntityFrameworksMigrations.dll
